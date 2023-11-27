@@ -1,2 +1,3 @@
 pygame 
-pillow
+Install it here: <https://www.pygame.org/download.shtml>
+Installation Notes and Instructions Here: <https://www.pygame.org/wiki/GettingStarted>
