@@ -1,5 +1,9 @@
-# Final-Project
+# PIXEL DRAW
 
-The project code takes an imput from prompting the veiwer to choose either a random 
-prompt generated from the prompt list or a specific prompt from the prompt list 
-the program will then take the prompt and use it to bring up a pixel art image attached to the prompt. The pygame window will open and the program will draw the pixel art for the viewer. 
+## Demo
+Demo Video: <URL>
+
+## GitHub Repository
+GitHub Repo: <https://github.com/CarolineLee06/Final-Project/blob/main/proposal.md/proposal.py>
+
+## This project opens a window that allows the user to draw using a pixel art format. 
