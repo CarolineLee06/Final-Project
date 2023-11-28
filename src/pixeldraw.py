@@ -1,36 +1,37 @@
 import pygame
 from pygame.locals import *
 
-pygame.init()
+def main():
+    pygame.init()
 
 
-width = 1000
-height = 1000
-pygame.display.set_caption("SquareDraw")
+    width = 1000
+    height = 1000
+    pygame.display.set_caption("SquareDraw")
 
-numberOfRows = 250  
-numberOfColumns = 250
-screen = pygame.display.set_mode((width, height), pygame.RESIZABLE)
-grid = [[0 for x in range(numberOfRows)] for y in range(numberOfColumns)] 
-
-
-basicX = width / numberOfColumns
-basicY = height / numberOfRows
+    numberOfRows = 250  
+    numberOfColumns = 250
+    screen = pygame.display.set_mode((width, height), pygame.RESIZABLE)
+    grid = [[0 for x in range(numberOfRows)] for y in range(numberOfColumns)] 
 
 
-running = 1
-clicking = 0
+    basicX = width / numberOfColumns
+    basicY = height / numberOfRows
 
-def drawScreen(screen, grid, basicX, basicY):  
-    for i in range(numberOfColumns):
-        for j in range(numberOfRows):
-            if grid[i][j]:
-                pygame.draw.rect(screen, (0, 0, 0), (j * basicX, i * basicY, basicX, basicY))
 
-screen.fill((255, 255, 255))  
+    running = 1
+    clicking = 0
 
-while running:
-    events = pygame.event.get()
+    def drawScreen(screen, grid, basicX, basicY):  
+        for i in range(numberOfColumns):
+            for j in range(numberOfRows):
+                if grid[i][j]:
+                    pygame.draw.rect(screen, (0, 0, 0), (j * basicX, i * basicY, basicX, basicY))
+
+    screen.fill((255, 255, 255))  
+
+    while running:
+        events = pygame.event.get()
     for event in events:
         if (event.type == pygame.QUIT) or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
             running = 0
@@ -56,4 +57,7 @@ while running:
             pygame.display.flip()  
 
 
-pygame.quit()
+    pygame.quit()
+
+if __name__ == "__main__":
+    main()
