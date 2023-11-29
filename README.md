@@ -1,7 +1,7 @@
 # PIXEL DRAW
 
 ## Demo
-Demo Video: <URL>
+Demo Video: <https://youtu.be/if1TeBnhmK8>
 
 ## GitHub Repository
 GitHub Repo: <https://github.com/CarolineLee06/Final-Project/blob/main/proposal.md/proposal.py>

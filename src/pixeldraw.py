@@ -57,7 +57,9 @@ while running:
             screen = pygame.display.set_mode((width, height), pygame.RESIZABLE)  
             screen.fill((255, 255, 255)) 
             drawScreen(screen, grid, basicX, basicY) 
-            pygame.display.flip()  
-
+            pygame.display.flip()
+        if (event.type == pygame.KEYDOWN and event.key == pygame.K_BACKSPACE):
+            screen.fill((255, 255, 255))  
+            
 
 pygame.quit()
